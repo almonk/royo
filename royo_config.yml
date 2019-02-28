@@ -1,0 +1,9 @@
+# Name your icon service
+service_name: "Unicorns Icon Set"
+service_tagline: "A beautiful collection of open source icons"
+
+# What hex value do you want to use if none is specified?
+default_color: "0070D2"
+
+# Where do your SVGs live?
+icon_directory: "./imports/unicorns/"

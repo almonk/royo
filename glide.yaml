@@ -1,0 +1,6 @@
+package: royo
+import:
+- package: github.com/rs/cors
+  version: ~1.6.0
+- package: gopkg.in/yaml.v2
+  version: ~2.2.2

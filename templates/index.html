@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ .Name }} Documentation</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    />
+    <style>
+      .thumbnail img {
+        width: 48px;
+        height: 48px;
+      }
+    </style>
+  </head>
+  <body class="sans-serif">
+    <div class="mv5-ns mv3 mh4-ns mh2">
+      <h1>{{ .Name }}</h1>
+      <h2 class="fw4">{{ .Tagline }}. <a href="https://github.com/almonk/royo" class="blue link">Built with Royo.</a></h2>
+    </div>
+    <div class="mh4-ns mh2 mb5-ns mb3">
+      <h3 class="ttu f6 gray">Usage</h3>
+      <p class="near-black lh-copy mb1">
+        Using {{.Name}} is easy. Icons are called by their name:
+      </p>
+      <code class="bg-near-black white pa2 dib br2"
+        >&#x3C;img src=&#x22;/icon_name&#x22;/&#x3E;</code
+      >
+
+      <p class="near-black lh-copy mb1">
+        You can change the color with a Hex value:
+      </p>
+      <code class="bg-near-black white pa2 dib br2"
+        >&#x3C;img src=&#x22;/icon_name?hex=666&#x22;/&#x3E;</code
+      >
+    </div>
+
+    <h3 class="ttu f6 gray mb3 mh4-ns mh2">Icon Definitions</h3>
+    <div class="flex flex-wrap mh4-ns mh2">
+      {{ range.Icons }}
+      <div
+        class="flex flex-column items-center ph2 pv4 thumbnail w-third w-20-ns"
+      >
+        <img src="/{{ .Name }}" />
+        <input
+          style="font-size:13px;"
+          class="mt2 code bn gray tc flex-auto"
+          readonly
+          value="{{.Name}}"
+        />
+      </div>
+      {{ end }}
+    </div>
+  </body>
+</html>

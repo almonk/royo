@@ -1,0 +1,8 @@
+hash: 6cd39bed9c2c95206c724659f88ec5a8a49deb888bd4da54b4d74d34aeb9fb7b
+updated: 2019-02-27T10:21:20.972994Z
+imports:
+- name: github.com/rs/cors
+  version: 9a47f48565a795472d43519dd49aac781f3034fb
+- name: gopkg.in/yaml.v2
+  version: 51d6538a90f86fe93ac480b35f37b2be17fef232
+testImports: []

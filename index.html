@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Royo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+</head>
+  <body>
+    <div class="mw7 pt4 ph2 center">
+      <h2>Royo</h2>
+      <p class="mb5">An icon server to use and customise</p>
+
+      <p class="b">Load an icon&hellip;</p>
+      <div class="mb3 pb3 flex flex-column items-start overflow-scroll">
+        <img src="http://localhost:8080/water" width="40" height="40" />
+        <pre
+          class="code dark-gray f6"
+        >&#x3C;img src=&#x22;http://localhost:8080/<span class="b">water</span>&#x22;/&#x3E;</pre>
+      </div>
+      <p class="b ">Change the color&hellip;</p>
+      <div class="mb3 pb3 flex flex-column items-start overflow-scroll">
+        <img src="http://localhost:8080/water?hex=0D2131" width="40" height="40" />
+        <pre
+          class="code dark-gray f6"
+        >&#x3C;img src=&#x22;http://localhost:8080/water<span class="b">?hex=0D2131</span>&#x22;/&#x3E;</pre>
+      </div>
+      <p class="b ">Change the size&hellip;</p>
+      <div class="mb3 pb3 flex flex-column items-start overflow-scroll">
+        <img src="http://localhost:8080/water" width="60" height="60" />
+        <pre
+          class="code dark-gray f6"
+        >&#x3C;img src=&#x22;http://localhost:8080/water&#x22; <span class="b">width=&#x22;60&#x22; height=&#x22;60&#x22;</span> /&#x3E;</pre>
+      </div>
+      <div class="pt3 mb5 bt b--light-gray">
+        <a href="https://github.com/heroku/malibu-as-a-service" class="black underline flex items-center">
+          <img src="http://localhost:8080/code?hex=111" class="dib pr1" width="16" />
+          Source code on Github
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
