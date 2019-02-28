@@ -70,3 +70,7 @@ heroku create --buildpack https://github.com/ph3nx/heroku-binary-buildpack.git
 heroku config:set PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/bin
 git push heroku master
 ```
+
+### Todo
+* Add documentation for other hosting providers
+* Add CDN documentation
