@@ -12,7 +12,7 @@ Check out a sample Royo install using the excellent Unicorns icon set:
 
 ---
 
-## Getting Started
+## Getting Started with development
 
 ### Dependencies
 * Go 1.11.5+
@@ -56,14 +56,16 @@ In this template the following variables can be used;
   * `{{ .Source }}` is the raw SVG content
 * `{{ .Name }}` is the name of the iconset
 
-### Deployment
 
-First, build a Go binary:
-```console
-make
-```
+---
 
-Ensure everything is committed then choose a deployment method;
+## Deployment
+
+Royo ships as a Go binary, so you don't need to install Go or build anything to use it as-is. You can simply;
+* Add the icons you want to serve to `./imports/`
+* Edit `royo_config.yml` to reflect your customisations
+
+Then, find somewhere to deploy it!
 
 #### Heroku
 Royo comes with Heroku support out of the box. You just need an app to push to:
