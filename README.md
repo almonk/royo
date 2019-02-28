@@ -3,6 +3,9 @@
 ### What is Royo?
 Royo is a general purpose Go app to serve SVG iconsets to your webapp or website. It has an extremely simple API that allows users to request a specific icon and, optionally, in a specific hex value.
 
+Check out a sample Royo install using the excellent Unicorns icon set:
+[https://serene-wildwood-49104.herokuapp.com/](https://serene-wildwood-49104.herokuapp.com/)
+
 ### What isn't Royo?
 * Royo isn't an icon pack. 
 * Royo only serves monochromatic SVGs for now and will probably have unintended results if used otherwise
@@ -38,7 +41,7 @@ service_tagline: "A beautiful collection of open source icons"
 default_color: "0070D2"
 
 # Where do your SVGs live?
-icon_directory: "./imports/slds/"
+icon_directory: "./imports/unicorns/"
 ```
 
 Remember to restart the Go server after changing any configuration.
