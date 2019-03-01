@@ -85,10 +85,17 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	loadConfig()
 	port := os.Getenv("PORT")
+	host := os.Getenv("HOST")
 
 	if port == "" {
-		port = "localhost:8080"
+		port = "8080"
 	}
+
+	if host == "" {
+		host = "localhost"
+	}
+
+	serverAddress := host + ":" + port
 
 	readIconsIntoMemory()
 	buildSite()
@@ -96,8 +103,8 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", handler)
 
-	print("--> Listening on http://" + port + "\n")
-	log.Fatal(http.ListenAndServe(port, mux))
+	print("--> Listening on http://" + serverAddress + "\n")
+	log.Fatal(http.ListenAndServe(serverAddress, mux))
 }
 
 func readIconsIntoMemory() {
