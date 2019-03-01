@@ -12,3 +12,4 @@
 *.out
 vendor/
 vendor/*
+.DS_Store
