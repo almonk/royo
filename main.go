@@ -84,9 +84,9 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	loadConfig()
-	port := ":" + os.Getenv("PORT")
+	port := os.Getenv("PORT")
 
-	if port == ":" {
+	if port == "" {
 		port = "localhost:8080"
 	}
 
