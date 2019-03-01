@@ -77,6 +77,13 @@ heroku config:set PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/
 git push heroku master
 ```
 
+### Docker
+```console
+docker-compose build
+docker-compose up
+```
+
+
 ### Todo
 * Add documentation for other hosting providers
 * Add CDN documentation
