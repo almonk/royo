@@ -24,7 +24,7 @@ Check out a sample Royo install using the excellent Unicorns icon set:
 git clone https://github.com/almonk/royo
 cd royo/
 glide install
-go run royo.go
+go run main.go
 ```
 
 Royo will start automatically on port `8080` unless a `PORT` environment variable is set otherwise
