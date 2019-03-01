@@ -72,6 +72,7 @@ Royo comes with Heroku support out of the box. You just need an app to push to:
 
 ```console
 heroku create --buildpack https://github.com/ph3nx/heroku-binary-buildpack.git
+heroku config:set HOST=0.0.0.0
 heroku config:set PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/bin
 git push heroku master
 ```
