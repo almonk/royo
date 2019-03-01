@@ -101,7 +101,7 @@ func main() {
 }
 
 func readIconsIntoMemory() {
-	// Read every single malibu icon into memory
+	// Read each icon into memory
 	files, err := ioutil.ReadDir(customConfig.IconDirectory)
 	allIcons.Icons = make(map[string]icon)
 	check(err)
